@@ -19,8 +19,8 @@
              <form class="form-search" method="post" action="https://echo.htmlacademy.ru/">
                <label class="form-search__label">
                  <input class="form-search__search" type="search" placeholder="Поиск по сайту">
-                 <button class="form-search__submit" type="submit">Найти</button>
                </label>
+               <button class="form-search__submit" type="submit">Найти</button>
              </form>
 
              <div class="user-menu">
@@ -99,7 +99,7 @@
            </ul>
          </div>
          <section class="catalog__filter">
-          <h1 class="visually-hidden">Фильтр</h1>
+          <h2 class="visually-hidden">Фильтр</h2>
 
          <div class="catalog-wrapper__filter">
             <h2 class="catalog-wrapper__heading">Фильтр:</h2>
@@ -108,61 +108,41 @@
               <fieldset class="form-catalog__fieldset">
                 <legend class="form-catalog__legend">Стоимость</legend>
                 <div class="price-filter__interval">
+                  <span class="price-filter__text">от</span>
                   <label class="price-filter__field">
-                    <span class="price-filter__text">от</span>
                     <input type="number" min="0" max="5000"  class="price-filter__input">
                   </label>
 
+                  <span class="price-filter__text">до</span>
                   <label class="price-filter__field">
-                    <span class="price-filter__text">до</span>
                     <input type="number" min="0" max="5000"  class="price-filter__input">
                   </label>
-                </div>
-
-
-                <!--
-                <div class="form-catalog__price-filter">
-                  <div class="price-filter__range-scale">
-                    <button class="price-filter__range-handle--min" type="button"></button>
-                    <button class="price-filter__range-handle--max" type="button"></button>
-                  </div>
-
-                  <div class="price-filter__interval">
-                    <label class="price-filter__label">
-                      <span>От</span>
-                      <input class="price-filter__input" type="text" value="0">
-                    </label>
-                    <label class="price-filter__label">
-                      <span>До</span>
-                      <input class="price-filter__input" type="text" value="5000">
-                    </label>
-                  </div>
                 </div>
               </fieldset>
-                -->
+
               <fieldset class="form-catalog__fieldset">
                 <legend class="form-catalog__legend">Цвет</legend>
 
                 <ul class="form-catalog__list">
                   <li class="form-catalog__list-item">
-                    <input class="form-catalog__checkbox" type="checkbox" checked>
-                    <label class="form-catalog__label-checkbox">Чёрный</label>
+                    <input class="form-catalog__checkbox" type="checkbox" id="colorblack" checked>
+                    <label class="form-catalog__label-checkbox" for="colorblack">Чёрный</label>
                   </li>
                   <li class="form-catalog__list-item">
-                    <input class="form-catalog__checkbox" type="checkbox" checked>
-                    <label class="form-catalog__label-checkbox">Белый</label>
+                    <input class="form-catalog__checkbox" type="checkbox" id="colorwhite" checked>
+                    <label class="form-catalog__label-checkbox" for="colorwhite">Белый</label>
                   </li>
                   <li class="form-catalog__list-item">
-                    <input class="form-catalog__checkbox" type="checkbox">
-                    <label class="form-catalog__label-checkbox">Синий</label>
+                    <input class="form-catalog__checkbox" type="checkbox" id="colorblue">
+                    <label class="form-catalog__label-checkbox" for="colorblue">Синий</label>
                   </li>
                   <li class="form-catalog__list-item">
-                    <input class="form-catalog__checkbox" type="checkbox">
-                    <label class="form-catalog__label-checkbox">Красный</label>
+                    <input class="form-catalog__checkbox" type="checkbox" id="colorred">
+                    <label class="form-catalog__label-checkbox" for="colorred">Красный</label>
                   </li>
                   <li class="form-catalog__list-item">
-                    <input class="form-catalog__checkbox" type="checkbox">
-                    <label class="form-catalog__label-checkbox">Розовый</label>
+                    <input class="form-catalog__checkbox" type="checkbox" id="colorpink">
+                    <label class="form-catalog__label-checkbox" for="colorpink">Розовый</label>
                   </li>
                 </ul>
               </fieldset>
@@ -172,12 +152,12 @@
 
                 <ul class="form-catalog__list">
                   <li class="form-catalog__list-item">
-                    <input class="form-catalog__radio visually-hidden" type="radio" checked>
-                    <label class="form-catalog__label-radio">Есть</label>
+                    <input class="form-catalog__radio" type="radio" id="bluetoothyes" checked>
+                    <label class="form-catalog__label-radio" for="bluetoothyes">Есть</label>
                   </li>
                   <li class="form-catalog__list-item">
-                    <input class="form-catalog__radio visually-hidden" type="radio">
-                    <label class="form-catalog__label-radio">Нет</label>
+                    <input class="form-catalog__radio" type="radio" id="bluetoothno">
+                    <label class="form-catalog__label-radio"  for="bluetoothno">Нет</label>
                   </li>
                 </ul>
               </fieldset>
@@ -187,28 +167,16 @@
          </div>
         </section>
         <section class="catalog__sorting">
-          <h1 class="visually-hidden">Сортировка</h1>
+          <h2 class="visually-hidden">Сортировка</h2>
          <div class="catalog-wrapper__content-header">
-           <h2 class="catalog-wrapper__heading">Сортировка:</h2>
+           <h3 class="catalog-wrapper__heading">Сортировка:</h3>
 
            <select class="sort-type">
             <option class="sort-type__item">Популярные</option>
             <option class="sort-type__item">По типу</option>
             <option class="sort-type__item">По цене</option>
            </select>
-<!--
-           <ul class="sort-type">
-             <li class="sort-type__item">
-               <a class="sort-type__link sort-type__link--active">По цене</a>
-             </li>
-             <li class="sort-type__item">
-               <a class="sort-type__link" href="#">По типу</a>
-             </li>
-             <li class="sort-type__item">
-               <a class="sort-type__link" href="#">По популярности</a>
-             </li>
-           </ul>
--->
+
            <ul class="sort-direction">
              <li class="sort-direction__item">
                <a class="sort-direction__link" href="#">
@@ -268,8 +236,8 @@
                </a>
              </li>
 
-             <li class="catalog__list-item">
-               <a class="card-product__link" href="#">
+              <li class="catalog__list-item">
+                <a class="card-product__link" href="#">
 
                   <h3 class="card-product__title">
                     Селфи-палка «Следуй за мной»
@@ -279,7 +247,8 @@
                   alt="Изображение селфи-палки «Следуй за мной»">
 
                   <span class="card-product__price">1 500 ₽</span>
-             </li>
+                </a>
+              </li>
            </ul>
            <a class="card-product__download-link" href="#">Загрузить ещЁ</a>
 
@@ -310,12 +279,14 @@
 
        <footer class="page-footer">
          <section class="page-header__logo">
-           <a class="header-logo" href="index.html">
+            <h2 class="visually-hidden">Логотип компании Девайс</h2>
+            <a class="header-logo" href="index.html">
              <img src="" width="145" height="36" alt="Логотип компании Девайс">
-           </a>
+            </a>
          </section>
 
          <section class="page-footer__middle">
+          <h2 class="visually-hidden">Контакты</h2>
            <address class="page-footer__address">Санкт-Петербург, набережная
              реки Карповки, 5, литера П.</address>
 
@@ -335,6 +306,7 @@
          </section>
 
          <section class="page-footer__bottom">
+          <h2 class="visually-hidden">Ссылки</h2>
            <ul class="page-footer__social-links">
              <li class="social-links__item">
                <a class="social-links__link" href="https://telegram.org">

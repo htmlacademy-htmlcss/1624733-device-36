@@ -19,9 +19,9 @@
         <nav class="page-header__user-menu">
           <form class="form-search" method="post" action="https://echo.htmlacademy.ru/">
             <label class="form-search__label">
-              <input class="form-search__search" type="search" placeholder="Поиск по сайту">
-              <button class="form-search__submit" type="submit">Найти</button>
+              <input class="form-search__searc h" type="search" placeholder="Поиск по сайту">
             </label>
+            <button class="form-search__submit" type="submit">Найти</button>
           </form>
 
           <div class="user-menu">
@@ -40,43 +40,29 @@
               </li>
             </ul>
           </div>
-        </nav>
 
-        <nav class="page-header__main-nav">
           <ul class="main-menu">
             <li class="main-menu__item">
               <a class="main-menu__link" href="#">Каталог товаров</a>
 
               <ul class="main-menu__dropdowns-menu">
-                <li class="dropdowns-menu__item">
-                  <ul class="dropdowns-menu__submenu">
-                    <li class="dropdowns-menu__submenu-item">
-                      <a class="dropdowns-menu__link" href="#">Виртуальная реальность</a>
-                    </li>
-                    <li class="dropdowns-menu__submenu-item">
-                      <a class="dropdowns-menu__link" href="#">Моноподы для селфи</a>
-                    </li>
-                    <li class="dropdowns-menu__submenu-item">
-                      <a class="dropdowns-menu__link" href="#">Экшн-камеры</a>
-                    </li>
-                  </ul>
+                <li class="dropdowns-menu__submenu-item">
+                  <a class="dropdowns-menu__link" href="#">Виртуальная реальность</a>
                 </li>
-                <li class="dropdowns-menu__item">
-                  <ul class="dropdowns-menu__submenu">
-                    <li class="dropdowns-menu__submenu-item">
-                      <a class="dropdowns-menu__link" href="#">Фитнес-браслеты</a>
-                    </li>
-                    <li class="dropdowns-menu__submenu-item">
-                      <a class="dropdowns-menu__link" href="#">Умные часы</a>
-                    </li>
-                  </ul>
+                <li class="dropdowns-menu__submenu-item">
+                  <a class="dropdowns-menu__link" href="#">Моноподы для селфи</a>
                 </li>
-                <li class="dropdowns-menu__item">
-                  <ul class="dropdowns-menu__submenu">
-                    <li class="dropdowns-menu__submenu-item">
-                      <a class="dropdowns-menu__link" href="#">Квадрокоптеры</a>
-                    </li>
-                  </ul>
+                <li class="dropdowns-menu__submenu-item">
+                  <a class="dropdowns-menu__link" href="#">Экшн-камеры</a>
+                </li>
+                <li class="dropdowns-menu__submenu-item">
+                  <a class="dropdowns-menu__link" href="#">Фитнес-браслеты</a>
+                </li>
+                <li class="dropdowns-menu__submenu-item">
+                  <a class="dropdowns-menu__link" href="#">Умные часы</a>
+                </li>
+                <li class="dropdowns-menu__submenu-item">
+                  <a class="dropdowns-menu__link" href="#">Квадрокоптеры</a>
                 </li>
               </ul>
             </li>
@@ -95,12 +81,12 @@
     </header>
 
     <main class="page-main">
-      <h1 class="visually-hidden">Интернет-магазин гаджетов</h1>
+      <h1 class="visually-hidden">Интернет-магазин гаджетов Девайс</h1>
       <!-- slider-menu -->
       <section class="page-main__slider-promo">
         <h2 class="visually-hidden">Популярные товары</h2>
 
-        <ol class="slider-promo__list">
+        <ul class="slider-promo__list">
           <li class="slider-promo__list-item">
             <h3 class="visually-hidden">Квадрокоптер с мощным лазером</h3>
 
@@ -172,12 +158,12 @@
               </dl>
             </div>
           </li>
-        </ol>
+        </ul>
 
         <div class="slider-promo__controls slider-promo-controls">
-          <button class="slider-promo-controls__button" type="button"></button>
-          <button class="slider-promo-controls__button" type="button"></button>
-          <button class="slider-promo-controls__button" type="button"></button>
+          <button class="slider-promo-controls__button" type="button">1</button>
+          <button class="slider-promo-controls__button" type="button">2</button>
+          <button class="slider-promo-controls__button" type="button">3</button>
         </div>
       </section>
 
@@ -189,8 +175,7 @@
           <li class="catalog-menu__item">
             <a class="catalog-menu__link" href="#">
               <div class="catalog-menu__image-wrapper">
-                <svg class="catalog-menu__image" width="160" height="160">
-                </svg>
+                <img class="catalog-menu__image" src="" alt="Виртуальная реальность" width="160" height="160">
               </div>
               <span class="catalog-menu__link-text">Виртуальная реальность</span>
             </a>
@@ -198,8 +183,7 @@
           <li class="catalog-menu__item">
             <a class="catalog-menu__link" href="#">
               <div class="catalog-menu__image-wrapper">
-                <svg class="catalog-menu__image" width="160" height="160">
-                </svg>
+                <img class="catalog-menu__image" src="" alt="Моноподы для селфи" width="160" height="160">
               </div>
               <span class="catalog-menu__link-text">Моноподы для селфи</span>
             </a>
@@ -207,8 +191,7 @@
           <li class="catalog-menu__item">
             <a class="catalog-menu__link" href="#">
               <div class="catalog-menu__image-wrapper">
-                <svg class="catalog-menu__image" width="160" height="160">
-                </svg>
+                <img class="catalog-menu__image" src="" alt="Экшн-камеры" width="160" height="160">
               </div>
               <span class="catalog-menu__link-text">Экшн-камеры</span>
             </a>
@@ -216,8 +199,7 @@
           <li class="catalog-menu__item">
             <a class="catalog-menu__link" href="#">
               <div class="catalog-menu__image-wrapper">
-                <svg class="catalog-menu__image" width="160" height="160">
-                </svg>
+                <img class="catalog-menu__image" src="" alt="Фитнес-браслеты" width="160" height="160">
               </div>
               <span class="catalog-menu__link-text">Фитнес-браслеты</span>
             </a>
@@ -225,8 +207,7 @@
           <li class="catalog-menu__item">
             <a class="catalog-menu__link" href="#">
               <div class="catalog-menu__image-wrapper">
-                <svg class="catalog-menu__image" width="160" height="160">
-                </svg>
+                <img class="catalog-menu__image" src="" alt="Умные часы" width="160" height="160">
               </div>
               <span class="catalog-menu__link-text">Умные часы</span>
             </a>
@@ -234,8 +215,7 @@
           <li class="catalog-menu__item">
             <a class="catalog-menu__link" href="#">
               <div class="catalog-menu__image-wrapper">
-                <svg class="catalog-menu__image" width="160" height="160">
-                </svg>
+                <img class="catalog-menu__image" src="" alt="Квадрокоптеры" width="160" height="160">
               </div>
               <span class="catalog-menu__link-text">Квадрокоптеры</span>
             </a>
@@ -257,28 +237,22 @@
 
           <ul class="services__list">
             <li class="services__list-item">
-              <div class="service__content-wrapper">
-                <h3 class="service__title">Доставка</h3>
+              <h3 class="service__title">Доставка</h3>
 
-                <p class="service__description">Мы с удовольствием доставим ваш товар прямо к вашему
-                  подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-              </div>
+              <p class="service__description">Мы с удовольствием доставим ваш товар прямо к вашему
+                подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
             </li>
             <li class="services__list-item">
-              <div class="service__content-wrapper">
-                <h3 class="service__title">Гарантия</h3>
+              <h3 class="service__title">Гарантия</h3>
 
-                <p class="service__description">Если из-за возгорания купленного у нас товара у вас сгорит дом —
-                  не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-              </div>
+              <p class="service__description">Если из-за возгорания купленного у нас товара у вас сгорит дом —
+                не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
             </li>
             <li class="services__list-item">
-              <div class="service__content-wrapper">
-                <h3 class="service__title">Кредит</h3>
+              <h3 class="service__title">Кредит</h3>
 
-                <p class="service__description">Залезть в долговую яму стало проще! Кредитные консультанты
-                  подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
-              </div>
+              <p class="service__description">Залезть в долговую яму стало проще! Кредитные консультанты
+                подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
             </li>
           </ul>
         </div>
@@ -287,18 +261,15 @@
       <!-- delivery -->
       <section class="page-main__delivery">
         <h2 class="visually-hidden">Доставка</h2>
-        <div>
           <a class="delivery-link" href="#">
-            <img class="delivery-icon" src="" width="125" height="100">
+            <img class="delivery-icon" src="" alt="" width="125" height="100">
             <p class="delivery-text">Доставим редкий товар под заказ</p>
-            <img class="delivery-tooltip-icon" src="" width="125" height="100">
+            <img class="delivery-tooltip-icon" src="" alt="" width="125" height="100">
           </a>
-        </div>
       </section>
 
       <!-- contacts -->
       <section class="company-delivery">
-        <h2 class="visually-hidden">О нас</h2>
         <h3 class="company__title">О нас</h3>
 
         <p class="company__text">Огромный выбор гаджетов не оставит равнодушным гика,
@@ -316,13 +287,13 @@
         <a class="button" href="#">Подробнее о нас</a>
       </section>
       <section class="contacts">
-        <h2 class="contacts__title">Контакты</h2>
+        <h3 class="contacts__title">Контакты</h3>
 
         <p class="contacts__text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
           проверить работоспособность покупки.</p>
 
         <span class="contacts__subtitle ">Интернет-магазин «Девайс»</span>
-        <p class="contacts__text">Санкт-Петербург, набережная реки Карповки, 5, литера П. <br>+7 (812) 812-12-12</p>
+        <address class="contacts__text">Санкт-Петербург, набережная реки Карповки, 5, литера П. <br>+7 (812) 812-12-12</address>
 
         <span class="contacts__subtitle">Время работы</span>
         <ul class="contacts__text">
@@ -335,26 +306,28 @@
 
       <!-- subscription -->
       <section class="page-main__subscription">
-        <h2 class="visually-hidden">О нас</h2>
         <h3 class="subscription__title">Подпишитесь на рассылку</h3>
         <p class="subscription__text">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами,
           распаковками, а также акции, спецпредложения и вот это вот всё.</p>
         <form class="form-subscription" method="post" action="https://echo.htmlacademy.ru/">
           <label class="form-subscription__label">
             <input class="form-subscription__email" type="email" placeholder="Ваш e-mail">
-            <button class="form-subscription__submit" type="submit">Подписаться</button>
           </label>
+          <button class="form-subscription__submit" type="submit">Подписаться</button>
         </form>
         <p class="subscription__free">Это бесплатно</p>
       </section>
     </main>
     <footer class="page-footer">
-      <div class="page-header__logo">
-        <a class="header-logo">
+      <section class="page-header__logo">
+         <h2 class="visually-hidden">Логотип компании Девайс</h2>
+         <a class="header-logo" href="index.html">
           <img src="" width="145" height="36" alt="Логотип компании Девайс">
-        </a>
-      </div>
-      <div class="page-footer__middle">
+         </a>
+      </section>
+
+      <section class="page-footer__middle">
+       <h2 class="visually-hidden">Контакты</h2>
         <address class="page-footer__address">Санкт-Петербург, набережная
           реки Карповки, 5, литера П.</address>
 
@@ -371,23 +344,24 @@
         </ul>
 
         <a class="page-footer__phone" href="tel:+74954959595">Тел.: +7 (812) 812-12-12</a>
-      </div>
+      </section>
 
-      <div class="page-footer__bottom">
+      <section class="page-footer__bottom">
+       <h2 class="visually-hidden">Ссылки</h2>
         <ul class="page-footer__social-links">
           <li class="social-links__item">
-            <span class="visually-hidden">Телеграм</span>
             <a class="social-links__link" href="https://telegram.org">
+             <span class="visually-hidden">Телеграм</span>
             </a>
           </li>
           <li class="social-links__item">
-            <span class="visually-hidden">Ютуб</span>
             <a class="social-links__link" href="https://www.youtube.com">
+             <span class="visually-hidden">Ютуб</span>
             </a>
           </li>
           <li class="social-links__item">
-            <span class="visually-hidden">Твиттер</span>
             <a class="social-links__link" href="https://twitter.com">
+             <span class="visually-hidden">Твиттер</span>
             </a>
           </li>
         </ul>
@@ -395,9 +369,8 @@
         <a class="page-footer__html-academy" href="https://htmlacademy.ru">
           <img src="" alt="Логотип .html academy">
         </a>
-      </div>
-      </div>
+      </section>
     </footer>
-  </body>
+</body>
 
 </html>
