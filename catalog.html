@@ -1,19 +1,15 @@
    <!DOCTYPE html>
    <html lang="ru">
-
      <head>
        <meta charset="utf-8">
        <title>Каталог</title>
      </head>
-
      <body>
        <header class="page-header">
          <div class="content-wrapper">
-           <div class="page-header__logo">
-             <a class="header-logo" href="index.html">
-               <img src="" width="145" height="36" alt="Логотип компании Девайс">
-             </a>
-           </div>
+            <a class="header-logo" href="index.html">
+              <img src="img/logo-black.svg" width="145" height="36" alt="Логотип компании Девайс">
+            </a>
 
            <nav class="page-header__user-menu">
              <form class="form-search" method="post" action="https://echo.htmlacademy.ru/">
@@ -23,7 +19,6 @@
                <button class="form-search__submit" type="submit">Найти</button>
              </form>
 
-             <div class="user-menu">
                <ul class="user-menu__list">
                  <li class="user-menu__list-item">
                    <a class="user-menu__link" href="#">Коля Петухов</a>
@@ -31,9 +26,6 @@
                  <li class="user-menu__list-item">
                    <a class="user-menu__link" href="#">Выйти</a>
                  </li>
-               </ul>
-
-               <ul class="user-menu__list">
                  <li class="user-menu__list-item">
                    <a class="user-menu__link" href="#">Сравнить</a>
                  </li>
@@ -41,7 +33,6 @@
                    <a class="user-menu__link" href="#">Корзина</a>
                  </li>
                </ul>
-             </div>
 
              <ul class="main-menu">
                <li class="main-menu__item">
@@ -83,7 +74,7 @@
        </header>
 
        <main>
-         <div class="page-main__header">
+         <header class="page-main__header">
            <h1 class="page-main__title">Моноподы для селфи</h1>
 
            <ul class="breadcrumbs">
@@ -97,26 +88,22 @@
                <a class="breadcrumbs__link" href="#">Моноподы для селфи</a>
              </li>
            </ul>
-         </div>
+         </header>
          <section class="catalog__filter">
-          <h2 class="visually-hidden">Фильтр</h2>
-
          <div class="catalog-wrapper__filter">
-            <h2 class="catalog-wrapper__heading">Фильтр:</h2>
+            <p class="catalog-wrapper__heading">Фильтр:</p>
 
             <form class="form-catalog" method="post" action="https://echo.htmlacademy.ru/">
               <fieldset class="form-catalog__fieldset">
                 <legend class="form-catalog__legend">Стоимость</legend>
                 <div class="price-filter__interval">
                   <span class="price-filter__text">от</span>
-                  <label class="price-filter__field">
-                    <input type="number" min="0" max="5000"  class="price-filter__input">
-                  </label>
+                  <input class="price-filter__input" type="number" name="min-meaning" min="0" max="5000" id="price-filter__min-meaning">
+                  <label class="price-filter__field visually-hidden" for="price-filter__min-meaning">Мин цена</label>
 
                   <span class="price-filter__text">до</span>
-                  <label class="price-filter__field">
-                    <input type="number" min="0" max="5000"  class="price-filter__input">
-                  </label>
+                  <input class="price-filter__input" name="max-meaning" type="number" min="0" max="5000" id="price-filter__max-meaning">
+                  <label class="price-filter__field visually-hidden" for="price-filter__max-meaning">Макс значение</label>
                 </div>
               </fieldset>
 
@@ -125,23 +112,23 @@
 
                 <ul class="form-catalog__list">
                   <li class="form-catalog__list-item">
-                    <input class="form-catalog__checkbox" type="checkbox" id="colorblack" checked>
+                    <input class="form-catalog__checkbox" type="checkbox" id="colorblack" name="colorblack" checked>
                     <label class="form-catalog__label-checkbox" for="colorblack">Чёрный</label>
                   </li>
                   <li class="form-catalog__list-item">
-                    <input class="form-catalog__checkbox" type="checkbox" id="colorwhite" checked>
+                    <input class="form-catalog__checkbox" type="checkbox" id="colorwhite" name="colorwhite" checked>
                     <label class="form-catalog__label-checkbox" for="colorwhite">Белый</label>
                   </li>
                   <li class="form-catalog__list-item">
-                    <input class="form-catalog__checkbox" type="checkbox" id="colorblue">
+                    <input class="form-catalog__checkbox" type="checkbox" id="colorblue" name="colorblue">
                     <label class="form-catalog__label-checkbox" for="colorblue">Синий</label>
                   </li>
                   <li class="form-catalog__list-item">
-                    <input class="form-catalog__checkbox" type="checkbox" id="colorred">
+                    <input class="form-catalog__checkbox" type="checkbox" id="colorred" name="colorred">
                     <label class="form-catalog__label-checkbox" for="colorred">Красный</label>
                   </li>
                   <li class="form-catalog__list-item">
-                    <input class="form-catalog__checkbox" type="checkbox" id="colorpink">
+                    <input class="form-catalog__checkbox" type="checkbox" id="colorpink" name="colorpink">
                     <label class="form-catalog__label-checkbox" for="colorpink">Розовый</label>
                   </li>
                 </ul>
@@ -167,14 +154,13 @@
          </div>
         </section>
         <section class="catalog__sorting">
-          <h2 class="visually-hidden">Сортировка</h2>
          <div class="catalog-wrapper__content-header">
-           <h3 class="catalog-wrapper__heading">Сортировка:</h3>
+           <p class="catalog-wrapper__heading">Сортировка:</p>
 
            <select class="sort-type">
-            <option class="sort-type__item">Популярные</option>
-            <option class="sort-type__item">По типу</option>
-            <option class="sort-type__item">По цене</option>
+            <option value="popular" class="sort-type__item">Популярные</option>
+            <option value="type" class="sort-type__item">По типу</option>
+            <option value="price" class="sort-type__item">По цене</option>
            </select>
 
            <ul class="sort-direction">
@@ -193,65 +179,49 @@
         </section>
         <section class="catalog__main">
            <h2 class="visually-hidden">Каталог товаров</h2>
-
            <ul class="catalog__list">
-             <li class="catalog__list-item">
+              <li class="catalog__list-item">
                <a class="card-product__link" href="#">
-
-                  <h3 class="card-product__title">
+                  <p class="card-product__title">
                     Любительская селфи-палка
-                  </h3>
-                  <img class="card-product__image" src="" width="360" height="380"
+                  </p>
+                  <img class="card-product__image" src="img/catalog/amateur-selfie-stick.jpg" width="360" height="380"
                     alt="Изображение любительской селфи-палки">
-
                   <span class="card-product__price">500 ₽</span>
                </a>
-             </li>
-
-             <li class="catalog__list-item">
-               <a class="card-product__link" href="#">
-
-                  <h3 class="card-product__title">
-                    Профессиональная селфи-палка
-                  </h3>
-
-                  <img class="card-product__image" src="" width="360" height="380"
-                    alt="Изображение профессиональной селфи-палки">
-
-                  <span class="card-product__price">1 500 ₽</span>
-               </a>
-             </li>
-
-             <li class="catalog__list-item">
-               <a class="card-product__link" href="#">
-
-                  <h3 class="card-product__title">
-                    Непотопляемая селфи-палка
-                  </h3>
-
-                  <img class="card-product__image" src="" width="360" height="380"
-                  alt="Изображение непотопляемой селфи-палки">
-
-                  <span class="card-product__price">2 500 ₽</span>
-               </a>
-             </li>
-
+              </li>
               <li class="catalog__list-item">
                 <a class="card-product__link" href="#">
-
-                  <h3 class="card-product__title">
-                    Селфи-палка «Следуй за мной»
-                  </h3>
-
-                  <img class="card-product__image" src="" width="360" height="380"
-                  alt="Изображение селфи-палки «Следуй за мной»">
-
-                  <span class="card-product__price">1 500 ₽</span>
+                <p class="card-product__title">
+                  Профессиональная селфи-палка
+                </p>
+                <img class="card-product__image" src="img/catalog/professional-selfie-stick.jpg" width="360" height="380"
+                  alt="Изображение профессиональной селфи-палки">
+                <span class="card-product__price">1 500 ₽</span>
+               </a>
+              </li>
+              <li class="catalog__list-item">
+                <a class="card-product__link" href="#">
+                  <p class="card-product__title">
+                    Непотопляемая селфи-палка
+                  </p>
+                  <img class="card-product__image" src="img/catalog/unsinkable-selfie-stick.jpg" width="360" height="380"
+                  alt="Изображение непотопляемой селфи-палки">
+                  <span class="card-product__price">2 500 ₽</span>
+                </a>
+              </li>
+              <li class="catalog__list-item">
+                <a class="card-product__link" href="#">
+                <p class="card-product__title">
+                  Селфи-палка «Следуй за мной»
+                </p>
+                <img class="card-product__image" src="img/catalog/selfie-stick-follow.jpg" width="360" height="380"
+                alt="Изображение селфи-палки «Следуй за мной»">
+                <span class="card-product__price">1 500 ₽</span>
                 </a>
               </li>
            </ul>
-           <a class="card-product__download-link" href="#">Загрузить ещЁ</a>
-
+           <button class="card-product__download-link">Загрузить ещЁ</button>
            <div class="pagination">
              <a class="pagination__button">Назад</a>
 
@@ -281,7 +251,7 @@
          <section class="page-header__logo">
             <h2 class="visually-hidden">Логотип компании Девайс</h2>
             <a class="header-logo" href="index.html">
-             <img src="" width="145" height="36" alt="Логотип компании Девайс">
+             <img src="img/logo-yellow.svg" width="145" height="36" alt="Логотип компании Девайс">
             </a>
          </section>
 
@@ -310,23 +280,26 @@
            <ul class="page-footer__social-links">
              <li class="social-links__item">
                <a class="social-links__link" href="https://telegram.org">
+                <img src="img/telegram.svg" alt="">
                 <span class="visually-hidden">Телеграм</span>
                </a>
              </li>
              <li class="social-links__item">
                <a class="social-links__link" href="https://www.youtube.com">
+                <img src="img/youtube.svg" alt="">
                 <span class="visually-hidden">Ютуб</span>
                </a>
              </li>
              <li class="social-links__item">
                <a class="social-links__link" href="https://twitter.com">
+                <img src="img/twitter.svg" alt="">
                 <span class="visually-hidden">Твиттер</span>
                </a>
              </li>
            </ul>
 
            <a class="page-footer__html-academy" href="https://htmlacademy.ru">
-             <img src="" alt="Логотип .html academy">
+             <img src="img/logo-html.svg" alt="Логотип .html academy">
            </a>
          </section>
        </footer>
