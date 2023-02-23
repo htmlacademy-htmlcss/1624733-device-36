@@ -245,34 +245,32 @@
             </li>
           </ul>
         </div>
-      </section>-->
-      <div>
-        <div class="services__controls">
-          <button class="services-controls__button" type="button">Доставка</button>
-          <button class="services-controls__button" type="button">Гарантия</button>
-          <button class="services-controls__button" type="button">Кредит</button>
+      </section>
+    -->
+      <div class="page-main__services">
+        <div class="tablist" role="tablist" aria-label="Services">
+          <a id="tab_1" class="tab" href="#tab_panel_1" role="tab" aria-controls="tab_panel_1" aria-selected="true">Доставка</a>
+          <a id="tab_2 class="tab" href="#tab_panel_2" role="tab" aria-controls="tab_panel_2" aria-selected="false" tabindex="-1">Гарантия</a>
+          <a id="tab_3 class="tab" href="#tab_panel_3" role="tab" aria-controls="tab_panel_3" aria-selected="false" tabindex="-1">Кредит</a>
         </div>
-        <div>
-          <ul class="services__list">
-            <li class="services__list-item">
-              <p class="service__title">Доставка</p>
-              <p class="service__description">Мы с удовольствием доставим ваш товар прямо к вашему
-                подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-                <img src="img/services/man-delivery.svg" alt="" height="164" width="136">
-            </li>
-            <li class="services__list-item">
-              <p class="service__title">Гарантия</p>
-              <p class="service__description">Если из-за возгорания купленного у нас товара у вас сгорит дом —
-                не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-                <img src="img/services/guarantee.svg" alt="" height="164" width="136">
-            </li>
-            <li class="services__list-item">
-              <p class="service__title">Кредит</p>
-              <p class="service__description">Залезть в долговую яму стало проще! Кредитные консультанты
-                подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
-                <img src="img/services/credit.svg" alt="" height="164" width="136">
-            </li>
-          </ul>
+
+        <div id="tab_panel_1" class="tabpanel" role="tabpanel" aria-labelledby="tab_1" tabindex="0">
+            <p class="service__title">Доставка</p>
+            <p class="service__description">Мы с удовольствием доставим ваш товар прямо к вашему
+            подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+            <img src="img/services/man-delivery.svg" alt="" height="164" width="136">
+        </div>
+        <div id="tab_panel_2" class="tabpanel" role="tabpanel" aria-labelledby="tab_2" tabindex="0" hidden>
+            <p class="service__title">Гарантия</p>
+            <p class="service__description">Если из-за возгорания купленного у нас товара у вас сгорит дом —
+            не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+            <img src="img/services/guarantee.svg" alt="" height="164" width="136">
+        </div>
+        <div id="tab_panel_3" class="tabpanel" role="tabpanel" aria-labelledby="tab_3" tabindex="0" hidden>
+            <p class="service__title">Кредит</p>
+            <p class="service__description">Залезть в долговую яму стало проще! Кредитные консультанты
+            подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+            <img src="img/services/credit.svg" alt="" height="164" width="136">
         </div>
       </div>
       <!-- delivery -->
