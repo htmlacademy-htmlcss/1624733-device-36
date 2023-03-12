@@ -21,16 +21,16 @@
             </form>
             <ul class="user-menu__list">
               <li class="user-menu__list-item">
-                <a class="user-menu__link" href="#">Коля Петухов</a>
+                <a class="user-menu__link user" href="#">Коля Петухов</a>
               </li>
               <li class="user-menu__list-item">
                 <a class="user-menu__link" href="#">Выйти</a>
               </li>
               <li class="user-menu__list-item">
-                <a class="user-menu__link" href="#">Сравнить</a>
+                <a class="user-menu__link compare" href="#">Сравнить</a>
               </li>
               <li class="user-menu__list-item">
-                <a class="user-menu__link" href="#">Корзина</a>
+                <a class="user-menu__link basket" href="#">Корзина</a>
               </li>
             </ul>
             <ul class="main-menu">
@@ -70,7 +70,7 @@
           </nav>
         </div>
       </header>
-      <main>
+      <main class="page-main__catalog">
         <header class="page-main__header">
           <h1 class="page-main__title">Моноподы для селфи</h1>
           <ul class="breadcrumbs">
@@ -140,7 +140,7 @@
                 </li>
               </ul>
             </fieldset>
-            <button class="form-catalog__button" type="submit">Показать</button>
+            <button class="form-catalog__button button" type="submit">Показать</button>
           </form>
         </div>
         <div class="catalog-wrapper__content-header">
@@ -152,12 +152,12 @@
           </select>
           <ul class="sort-direction">
             <li class="sort-direction__item">
-              <a class="sort-direction__link" href="#">
+              <a class="sort-direction__link arrow_up" href="#">
                 <span class="visually-hidden">Сортировать по убыванию</span>
               </a>
             </li>
             <li class="sort-direction__item">
-              <a class="sort-direction__link" href="#">
+              <a class="sort-direction__link arrow_down" href="#">
                 <span class="visually-hidden">Сортировать по возрастанию</span>
               </a>
             </li>
@@ -207,7 +207,7 @@
               </a>
             </li>
           </ul>
-          <button class="card-product__download-link">Загрузить ещЁ</button>
+          <button class="card-product__download-link">Загрузить ещё</button>
           <div class="pagination">
             <a class="pagination__button">Назад</a>
             <ul class="pagination__list">
